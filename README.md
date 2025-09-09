@@ -1,12 +1,26 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Lullafy Client ■
+Frontend for the **Lullafy** capstone project.
+Built with **React + Vite**.
+---
+## ■ Quick Start
+# Install dependencies
+npm install
+# Start the dev server
+npm run dev
+# → open the "Local:" URL that Vite prints (usually http://localhost:5173)
+---
+## ■ API Setup
+The client expects a backend running (see [lullafy-api](https://github.com/EricWS19/lullafy-api)).
+Create a `.env` file in the root of this project with:
+VITE_API_URL=http://localhost:3000
+This tells the frontend where the backend API lives.
+---
+## ■ Routes
+- `/` → Shows that the client is running
+- `/users` → Lists users and their lullabies
+- `/lullabies` → Lists lullabies and their users
+---
+## ■ Notes
+- Backend must be running on port 3000 for the frontend to fetch data.
+- By default, Vite runs the client on port 5173 (if that port is taken, it may use 5174 or higher).
+- Always open the **Local URL** that Vite prints when starting the dev server.
